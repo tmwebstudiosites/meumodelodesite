@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modas a Rigor Ateliê | Vestidos de Noiva e Festa</title>
+    <meta
+      name="description"
+      content="Modas a Rigor Ateliê: vestidos de noiva e festa, modelos sob medida, madrinhas, debutantes e eventos. Agende seu atendimento."
+    />
+    <meta name="theme-color" content="#2b0f23" />
+    <meta property="og:title" content="Modas a Rigor Ateliê | Noivas e Festa" />
+    <meta property="og:description" content="Vestidos de noiva e festa, modelos sob medida, do seu jeitinho." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="icon" type="image/webp" href="/img/logo.webp" />
+    <link rel="preload" as="image" type="image/webp" href="/img/vestido-verde-640.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <noscript><style>#loader{display:none}[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ClothingStore",
+        "name": "Modas a Rigor Ateliê",
+        "description": "Vestidos de noiva e festa, modelos sob medida, madrinhas, debutantes e eventos.",
+        "sameAs": ["https://www.instagram.com/modasarigorcg/"]
+      }
+    </script>
+  </head>
+  <body aria-busy="true">
+    <div id="loader" role="status" aria-live="polite">
+      <img src="/img/logo.webp" alt="" width="96" height="96" />
+      <p class="sr-only">Carregando o site</p>
+      <div class="loader__bar" aria-hidden="true"><span id="loader-fill"></span></div>
+    </div>
+    <div id="scroll-progress" aria-hidden="true"><span></span></div>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="header" id="header">
+      <a class="brand" href="#topo" aria-label="Modas a Rigor Ateliê — início">
+        <img src="/img/logo.webp" alt="" width="48" height="48" />
+        <span class="brand__text"><strong>Modas a Rigor</strong><small>Noivas e Festa</small></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#colecoes">Coleções</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sob-medida">Sob medida</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <a class="btn btn--small" data-cta data-cta-source="header" href="#contato">Agendar</a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="drawer" id="drawer" hidden>
+      <nav aria-label="Menu móvel">
+        <a href="#colecoes">Coleções</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sob-medida">Sob medida</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn" data-cta data-cta-source="drawer" href="#contato">Agendar atendimento</a>
+      </nav>
+    </div>
+
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal style="--i: 0">Ateliê · Noivas e Festa</p>
+          <h1 data-reveal style="--i: 1">Vestidos feitos <em>do seu jeitinho</em></h1>
+          <p class="lead" data-reveal style="--i: 2">
+            Vestidos de noiva e de festa, modelos sob medida e atendimento próximo para madrinhas, debutantes e eventos.
+          </p>
+          <div class="hero__actions" data-reveal style="--i: 3">
+            <a class="btn" data-cta data-cta-source="hero" href="#contato">Agendar atendimento</a>
+            <a class="btn btn--ghost" href="#colecoes">Ver looks</a>
+          </div>
+        </div>
+        <div class="hero__art" data-reveal style="--i: 2">
+          <div class="hero__blob" aria-hidden="true"></div>
+          <figure class="arch" id="hero-photo" data-photo="vestido-verde" data-eager></figure>
+          <p class="chip chip--float"><span aria-hidden="true">✦</span> Sob medida</p>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marquee"></div>
+      </div>
+
+      <section class="section" id="colecoes" aria-labelledby="t-colecoes">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Looks em destaque</p>
+          <h2 id="t-colecoes">Escolha o seu <em>momento</em></h2>
+        </header>
+        <div data-lazy="catalog" aria-busy="true" class="lazy">
+          <div class="skeleton-grid" aria-hidden="true">
+            <div class="skel skel--card"></div>
+            <div class="skel skel--card"></div>
+            <div class="skel skel--card"></div>
+          </div>
+          <p class="sr-only">Carregando looks…</p>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="servicos" aria-labelledby="t-servicos">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Atendimento</p>
+          <h2 id="t-servicos">Para cada <em>celebração</em></h2>
+        </header>
+        <div data-lazy="services" aria-busy="true" class="lazy">
+          <div class="skeleton-list" aria-hidden="true">
+            <div class="skel skel--row"></div>
+            <div class="skel skel--row"></div>
+            <div class="skel skel--row"></div>
+          </div>
+          <p class="sr-only">Carregando serviços…</p>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="sob-medida" aria-labelledby="t-medida">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Modelos sob medida</p>
+          <h2 id="t-medida">Do primeiro oi ao <em>grande dia</em></h2>
+        </header>
+        <div data-lazy="steps" aria-busy="true" class="lazy">
+          <div class="skeleton-list skeleton-list--dark" aria-hidden="true">
+            <div class="skel skel--row"></div>
+            <div class="skel skel--row"></div>
+            <div class="skel skel--row"></div>
+          </div>
+          <p class="sr-only">Carregando etapas…</p>
+        </div>
+      </section>
+
+      <section class="section section--narrow" id="duvidas" aria-labelledby="t-duvidas">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2 id="t-duvidas">Tire suas <em>dúvidas</em></h2>
+        </header>
+        <div data-lazy="faq" aria-busy="true" class="lazy">
+          <div class="skeleton-list" aria-hidden="true">
+            <div class="skel skel--line"></div>
+            <div class="skel skel--line"></div>
+            <div class="skel skel--line"></div>
+          </div>
+          <p class="sr-only">Carregando perguntas…</p>
+        </div>
+      </section>
+
+      <section class="cta" id="contato" aria-labelledby="t-contato">
+        <div class="cta__inner" data-reveal>
+          <p class="eyebrow">Atendimento</p>
+          <h2 id="t-contato">Vamos escolher o seu <em>look</em>?</h2>
+          <p class="lead">Envie uma mensagem e combine o seu atendimento no ateliê.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" data-cta data-cta-source="contact" href="#contato">Agendar atendimento</a>
+            <a class="btn btn--outline" id="ig-link" href="https://www.instagram.com/modasarigorcg/" rel="noopener" target="_blank">
+              @modasarigorcg
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="/img/logo.webp" alt="" width="40" height="40" />
+      <p><strong>Modas a Rigor Ateliê</strong> · Noivas e Festa</p>
+      <p class="footer__small">© <span id="year">2026</span> Todos os direitos reservados.</p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Fechar">×</button>
+      <figure id="lightbox-figure"></figure>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "entry": ["scripts/*.mjs", "tests/**/*.ts", "stryker.config.json"],
+  "project": ["src/**/*.ts", "tests/**/*.ts", "scripts/**/*.mjs"],
+  "ignoreDependencies": ["@swc/core", "@fontsource/cormorant-garamond", "@fontsource-variable/jost"]
+}

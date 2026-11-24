@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "plugins": ["@stryker-mutator/vitest-runner"],
+  "mutate": [
+    "src/core/**/*.ts",
+    "src/data/catalog.ts",
+    "src/data/site.ts",
+    "src/features/whatsapp.ts",
+    "!src/core/telemetry.ts"
+  ],
+  "reporters": ["clear-text", "html", "json"],
+  "htmlReporter": { "fileName": "reports/mutation/index.html" },
+  "jsonReporter": { "fileName": "reports/mutation/mutation.json" },
+  "thresholds": { "high": 85, "low": 70, "break": 60 },
+  "coverageAnalysis": "perTest",
+  "tempDirName": ".stryker-tmp"
+}
